@@ -1,0 +1,76 @@
+@import "../../../styles.scss";
+
+.conact {
+    padding: 50px 0;
+    .left-pic{
+        @media(max-width:767px){
+            display: none;
+        }
+    }
+    .right-contact {
+        span {
+            margin-bottom: 12px;
+            color: $secColor;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 36px;
+            font-weight: bold;
+            font-family: $georgFont;
+            margin-bottom: 26px;
+            color: $mainColor;
+        }
+        form {
+            position: relative;
+            input {
+                padding: 15px;
+                border: 1px solid #bdbdbd;
+                border-radius: 5px;
+                width: 100%;
+                padding-left: 44px;
+                &::placeholder{
+                    color: #BDBDBD;
+                    font-size: 16px;
+                    
+                }
+            }
+            img {
+                position: absolute;
+                left: 12px;
+                top: 16px;
+            }
+            button {
+                position: absolute;
+                width: fit-content;
+                right: 6px;
+                top: 6px;
+                padding: 10px 30px;
+                background-color: $secColor;
+                border: none;
+                color: $mainColor;
+                font-size: 16px;
+                border-radius: 5px;
+                
+            }
+        }
+        @media(max-width:425px){
+            span{
+                font-size: 15px;
+            }
+            h2{
+                font-size: 28px;
+            }
+            form{
+                button{
+                    padding: 10px;
+                }
+                input{
+                    &::placeholder{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

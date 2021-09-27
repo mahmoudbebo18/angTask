@@ -1,0 +1,48 @@
+@import "../../../styles.scss";
+.navbar {
+    background-color: transparent;
+    padding: 24px 0;
+    .container {
+        @media (max-width: 575px) {
+            padding: 0 15px;
+        }
+    }
+    .navbar-nav {
+        .nav-link {
+            font-weight: bold;
+            color: $mainColor;
+        }
+    }
+    .sign {
+        display: flex;
+        margin-left: 60px;
+        @media (max-width: 991px) {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+        .btn {
+            padding: 10px 30px;
+            background-color: $secColor;
+            font-size: 16px;
+            margin-right: 16px;
+            border-radius: 4px;
+        }
+        span {
+            border-radius: 4px;
+            padding: 10px;
+            background-color: #fff;
+            cursor: pointer;
+            @media(max-width:991px){
+                background-color: #f0f4f9;
+            }
+        }
+    }
+    .navbar-collapse {
+        @media (max-width: 991px) {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    }
+}

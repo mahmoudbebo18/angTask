@@ -1,0 +1,102 @@
+@import "../../../styles.scss";
+.fead-back {
+    padding:50px 0 90px;
+    .left-part {
+        img {
+            width: 100%;
+        }
+        .left-rectangle {
+            width: 120px;
+            height: 120px;
+            background-color: $secColor;
+            position: absolute;
+            top: 0;
+            left: 14px;
+            border-radius: 5px;
+            transform: translate(-25%, -25%);
+            img {
+                padding: 10px 0 0 10px;
+            }
+            @media(max-width:575px){
+                transform: translate(-50%, -50%);
+                left:50%
+            }
+        }
+        .client-label {
+            width: 70%;
+            background: #ccc;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 16px;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgb(0, 0, 0, 3%);
+            h6{
+                font-size: 20px;
+                font-weight: bold;
+                color: #212529;
+                margin: 0;
+            }
+            span{
+                margin: 0;
+                color: #757575;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .right-part {
+        h2 {
+            font-family: $georgFont;
+            font-size: 45px;
+            margin-bottom: 16px;
+            span {
+                color: $secColor;
+            }
+        }
+        p {
+            font-size: 16px;
+            color: #212529;
+            line-height: 26px;
+            margin-bottom: 36px;
+        }
+        .lower-part {
+            h4 {
+                font-weight: bold;
+                color: $mainColor;
+                margin-bottom: 16px;
+                font-size: 16px;
+            }
+            .specify {
+                background-color: #f0f4f9;
+                align-items: center;
+                border-radius: 8px;
+                div {
+                    margin-left: 24px;
+                    h5 {
+                        font : {
+                            size: 16px;
+                            weight: bold;
+                        }
+                        color: $mainColor;
+                        margin-bottom: 8px;
+                    }
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        @media(max-width:991px){
+            margin-top: 80px;
+        }
+        @media(max-width:425px){
+            h2{
+                font-size: 36px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}

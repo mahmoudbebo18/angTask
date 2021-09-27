@@ -1,0 +1,107 @@
+@import "../../../styles.scss";
+
+.head {
+    background-color: #f0f4f9;
+    .head-content {
+        padding: 50px 0;
+        min-height: 600px;
+        @media (max-width: 991px) {
+            padding: 0;
+        }
+        .left-head {
+            span {
+                font-size: 24px;
+                font-weight: bold;
+                color: $mainColor;
+                margin-bottom: 8px;
+            }
+            h1 {
+                font-family: "Georgia";
+                font-size: 44px;
+                font-weight: normal;
+                color: $mainColor;
+                margin-bottom: 24px;
+            }
+            .getQuote {
+                background-color: $secColor;
+                font-size: 16px;
+                color: $mainColor;
+                padding: 15px 40px;
+                margin-right: 12px;
+            }
+            .readMore {
+                background-color: #fff;
+                border: 1px solid #bdbdbd;
+                font-size: 16px;
+                color: $mainColor;
+                padding: 15px 40px;
+            }
+        }
+    }
+    .my-count-down {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $mainColor;
+        padding: 24px 36px;
+        border-radius: 10px;
+        .success {
+            img {
+                width: 120px;
+                height: 120px;
+                margin-right: 20px;
+            }
+            h2 {
+                font-family: $georgFont;
+                color: #fff;
+                font-size: 36px;
+                .basic {
+                    color: $secColor;
+                }
+            }
+        }
+        .card {
+            background-color: transparent !important;
+            border: none;
+            color: #fff;
+            font-size: 36px;
+            position: relative;
+            &::after {
+                content: "Remaining Time  ";
+                display: block;
+                position: absolute;
+                left: 0;
+                top: -25px;
+                width: 100%;
+                height: 10px;
+                font-size: 15px;
+            }
+        }
+        @media (max-width: 991px) {
+            padding: 24px 10px;
+            .success {
+                img {
+                    width: 70px;
+                    height: 70px;
+                }
+                h2{
+                    font-size: 20px;
+                }
+            }
+            .card{
+                font-size: 20px;
+            }
+        }
+        @media(max-width:575px){
+            width: 95%;
+            flex-wrap: wrap;
+            .success{
+                margin-bottom: 24px;
+            }
+        }
+    }
+    .right-header {
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+}
